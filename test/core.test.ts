@@ -1,0 +1,1 @@
+import{expect,it}from'vitest';import{CookieJar}from'../src/index.js';it('selects',()=>{const x=new CookieJar();x.set({name:'a',value:'1',domain:'test',path:'/',secure:false,created:1});expect(x.get('test','/')).toHaveLength(1)});
